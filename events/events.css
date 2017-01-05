@@ -1,0 +1,71 @@
+/**
+*  Custome webpage style used in "event.html"
+**/
+
+/***** EVENT ****/
+/*.bodyEvents{
+	margin: 0 auto;
+	background-color:#F0F0F0;
+	font-family: arial;
+	font-size: 100%;
+	text-align: left; 
+	color: black;
+	width: 1000px;
+	padding: 0;
+	}	*/
+
+.mainContent{
+	width: 100%;
+	}
+
+.navMenu{
+	width:160px;
+	background: red;
+	margin-top: 10px;
+	}	
+.navContainer{
+	float: left;
+	margin:0;
+	}
+
+.navMenu li{
+	list-style:none;
+	}
+
+.navMenu a{
+	border-bottom:1px dotted gray;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	display: block;
+	padding: 10px 0 10px 20px;
+	text-decoration: none;	
+	}
+
+.navMenu ul li a:hover{
+	background: white;
+	text-decoration: none;
+	color: red;
+	}
+
+.subContent{
+	float: left;
+	width: 810px;
+	background: white;
+	margin-top: 10px;
+	margin-left: 10px;
+	padding: 10px;
+	}
+
+.navMenu ul li a{
+	background: red;
+	color: white;
+	}
+
+.navMenu ul li a.active{
+	background: white;
+	text-decoration: none;
+	color: red;
+	}
+
+/***** END of EVENT ****/

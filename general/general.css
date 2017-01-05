@@ -1,0 +1,176 @@
+/**
+* Main website style shared by all pages  
+**/
+
+html {
+	/*min-width: 800px;*/	
+	}	
+
+* {
+	padding:0;
+	margin: 0;
+	}
+
+/***** HEADER  *****/
+/*Header main preferences*/
+.mainHeader{
+	background-color:#dddddd;
+	}
+/*topHeader preferences*/
+.topHeader {	
+	background-color: white;
+	color:black;
+	font-style: oblique;
+	font-family: Times;
+	}
+
+/*keeps title and subtitle in place	*/
+.topHeader li{
+	display :inline-block;
+	}
+
+/*Title: PeruvianNow*/	
+.topHeader h1 {
+	display: inline;
+	display :inline-block;
+	padding-top: 10px;
+	padding-left: 20px;
+	font-size: 35px;
+	}
+	
+/*Sub title: What are peruviands doing now?*/
+.topHeader h2 {
+	font-size: 30px;
+	padding: 15px 25px 1px 16px; 
+	}
+
+/*body prefereneces*/
+.body {
+	background-color: #dddddd;
+	font-family: times;
+	font-size: 100%;
+	text-align: left; 
+	color: black;
+	margin: 0px;
+	padding: 0px;	
+	}
+ 
+/* nav bar prefereneces*/
+.headerNav ul {
+  	list-style: none;
+  	background-color: red;
+  	text-align: center;
+  	padding: 0;
+  	margin: 0;
+	}
+
+/*nav bar preferences*/
+.headerNav li {
+  	font-family: times;
+  	font-size: 1.2em;
+  	line-height: 40px;
+  	height: 40px;
+  	border-top: 1px solid white;
+	}
+ 
+/*nav bar preferences*/
+.headerNav a {
+  	text-decoration: none;
+  	color: white;
+  	display: block;
+  	transition: .3s background-color;
+	}
+ 
+/* nav bar hover preferences*/
+.headerNav a:hover {
+  	background-color: white;
+  	color: red;
+	}
+ 
+/*nav bar active preferences */
+.headerNav a.active {
+	border: 0.5px solid red;
+	border-top: none;
+  	background-color: white;
+  	color: red
+  	/*cursor: default;*/
+	}
+/**** END OF HEADER ****?	
+ 
+/**** DESKTOP VIEW ****/
+@media screen and (min-width: 600px) {
+/*** DESKTOP HEADER ***/ 
+/*headerNav preferences*/	
+.headerNav li {
+    width: 120px;
+    border-bottom: none;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+	}
+/*nav bar preferences*/ 
+.headerNav li {
+    display: inline-block;
+    margin-right: -4px;
+    border-top: none;
+	}
+/*nav bar preferences*/
+.headerNav a:hover {
+ 	border-top: none;
+	}
+ /*body preferences*/
+.body{
+ 	margin: 0 auto;
+	width: 1000px;
+	}
+/*nav bar preferences*/
+.headerNav {
+	border-style: solid;
+    border-width: 0.5px; 
+    border-color: red;
+	}
+/*nav bar preferences*/
+.headerNav a {
+  	text-decoration: none;
+  	display: block;
+  	transition: .3s background-color;
+	}
+/*nav bar active preferences - 
+will keep the active page hover permantently*/
+.headerNav a.active{
+	/*background-color: #8B0000;*/ 
+	background-color: white;
+	color: red;	
+	text-decoration: none;
+	}
+/*topHeader preferences*/
+.topHeader h2 {
+	font-size: 30px;
+	padding: 15px 25px 1px 286px; 	
+	}
+/*** DESKTOP HEADER ***/ 
+
+/***** DESKTOP FOOTER ****/
+/*footer preferences*/
+.mainFooter {
+	background-color:#FF0000;
+	width: 100%;
+	float: left;
+	margin: 0; /* top-bottom left-right*/ 	
+	height: 250px;
+	bottom: 0;
+	margin-top: 10px;
+	}
+/*footer paragraph preferences*/
+.mainFooter p{
+	width: 92%;
+	margin: 2% auto;
+	color: white;
+	}
+/*logo preferences*/
+.logoBottom img {
+	padding-top: 50px;
+	float: right;
+	}
+/***** END of FOOTER ****/	
+}

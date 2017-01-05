@@ -1,0 +1,117 @@
+/**
+*  Custome webpage style used in "restaurantt.html"
+**/
+
+/*.bodyRestaurants{
+	margin: 0 auto;
+	background-color:#F0F0F0;
+	font-family: times;
+	font-size: 100%;
+	text-align: left; 
+	color: black;
+	width: 1000px;
+	padding: 0;
+	}*/
+
+.mainContent{
+	width: 100%;
+	}
+
+.navContainer{
+	float: left;
+	padding: 0;
+	}
+
+.navMenu{
+	width:200px;
+	font-size: 10px;
+	background: red;
+	margin-top: 10px;
+	margin-bottom: 0;
+	}
+
+.navMenu li{
+	list-style:none;
+	}
+
+.navMenu a{
+	border-bottom:1px dotted gray;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: .2em;
+	display: block;
+	padding: 10px 0 10px 20px;
+	text-decoration: none;	
+	}
+
+.mainNavUl ul{
+	display: none;
+	}
+
+.mainNavUl li.tap ul{
+	display: block;
+	}
+
+.mainNavUl li.undo ul{
+	display: none;
+	}
+
+.mainNavUl ul a:before{
+	content: '\203A';
+	margin-right: 20px;
+	}
+
+.navMenu ul li a:hover{
+	/*background: #D00000;*/
+	background: white;
+	text-decoration: none;
+	color: red;
+	}
+
+/*.restaurantNavMenu ul li a:active{
+	background: white;
+	text-decoration: none;
+	color: black;
+	}*/
+
+.navMenu ul li a{
+	background: red;
+	color: white;
+	}
+
+.navMenu ul li a.active{
+	background: white;
+	text-decoration: none;
+	color: black;
+	}
+
+.navMenu .sub-arrow:after{
+	content: '\203A';
+	color: white;
+	float: right;
+	margin-right: 20px;
+	transform: rotate(90deg);
+	-webkit-transform:rotate(90deg);
+	-moz-transform:rotate(90deg);
+	}
+
+.hasSub ul{
+	padding-left: 20px;
+	}
+
+.navMenu li.tap .sub-arrow:after{
+	content :'\2039';
+	color:black;
+	}
+
+.middleContent{
+	background: white;
+	float:left;
+	width: 560px;
+	height: 1015px;
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	}
+/***** END of RESTAURANTS ****/

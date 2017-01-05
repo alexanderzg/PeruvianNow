@@ -1,0 +1,152 @@
+<!--
+* html structure used in "index.html"
+-->
+
+
+<!doctype html>
+<html lang="en">   
+<head> <!-- head begins -->
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width = device-width, initial-scale=1.0"> 
+	<title> homePage </title>
+	<link type="text/css" rel="stylesheet" href="../index/index.css">
+	<link type="text/css" rel="stylesheet" href="../general/general.css">
+	<!-- <link href="../general/carousel.css" rel="stylesheet"> -->
+	<link href="../general/carousel.css" rel="stylesheet">
+
+</head> <!-- head Ends -->
+
+<body class="body" onload="$('#myCarousel').carousel()"> <!-- body Begins -->
+	
+	<header class="mainHeader"> <!--header begins-->
+		<div class="topHeader">
+			<ul>
+				<li><h1> PeruvianNow.com </h1></li>
+				<li><h2> What are Peruvians doing now? </h2></li>
+			</ul>
+		</div> 
+		<nav class="headerNav"> 		
+		<ul>
+       		<li><a id="a" href="index.html" title="Home Page"> Home </a></li>
+       		<li><a id="b" href="events.html" title="What's coming up">Events</a></li>
+       		<li><a id="c" href="restaurants.html" title="The best of the best">Restaurants</a></li>
+       		<li><a id="d" href="services.html" title="Find out what's new">Services</a></li>
+       		<li><a id="e" href="blog.html" title="What's happening now">Blog</a></li>
+		</ul>
+		</nav>
+	</header> <!-- header Ends -->
+
+<section class="mainContent"> <!-- mainContentIndex Begins -->
+	<div class="subContent"> <!-- subContentIndex Begins -->
+		<article class="leftContent"> <!-- leftContentIndex Begins -->
+			 <figure classs="figureSection">
+	                <img src="../index/pic/restaurantPic.jpg">
+	            <figcaption class="homeCaption">
+	                <content> 
+	                	<h3>Complete list of Peruvian restaurants in United States. Click here to find out all restaurants by States</h3>
+	                </content>
+	            </figcaption>
+	         </figure>
+		</article> <!-- subContentIndex Ends -->
+
+		<div class="middleContent"> <!-- middleContentIndex Begins -->
+			<!-- myCarousel Begins -->
+			<div id="myCarousel" class ="carousel" data-interval="3000" data-ride="carousel-indicators" style="width: 550px; height: 502px; margin: 0 auto">
+				<ol class="carousel-indicators">
+					   <li data-target = "#myCarousel" data-slide-to = "0" class ="active"></li>
+		 			   <li data-target = "#myCarousel" data-slide-to = "1"> </li>
+					   <li data-target = "#myCarousel" data-slide-to = "2"> </li>
+				</ol>      
+
+				<div class ="carousel-inner">
+					<div class ="item active">
+						<img src = "../index/pic/casaBlanca.jpg" alt = "Polar" class ="img-responsive">
+						<div class = "carousel-caption">
+							<h3>Uno</h3>
+						</div>
+					</div>
+					<div class ="item">
+						<img src = "../index/pic/mp1.jpg" alt = "Polar" class ="img-responsive">
+						<div class = "carousel-caption">
+							<h3>Dos</h3>
+						</div>
+					</div>
+					<div class ="item">
+						<img src = "../index/pic/costaverde.jpg" alt = "Polar" class ="img-responsive">
+						<div class = "carousel-caption">
+							<h3>Tres</h3>
+						</div>
+					</div>
+				</div>
+
+				<a class ="carousel-control left" href ="#myCarousel" data-slide = "prev">
+					<span class = "icon-prev"></span>
+				</a>
+
+				<a class ="carousel-control right" href ="#myCarousel" data-slide = "next">
+					<span class = "icon-next"></span>
+				</a>
+			</div>	<!-- myCarousel Ends-->	
+		</div> <!-- middleContentIndex Ends-->
+
+		<article class="rightContent"> <!-- rightContentIndex Begins-->
+			 <figure classs="figureSection">
+	                <img src="../index/pic/redWhite.jpg">
+	            <figcaption class="homeCaption">
+	                <content> 
+	                	<h3> Santiago's Blog: Today Santiago will share what's new with peruvian musician living in Los Angeles California</h3>
+	                </content>
+	            </figcaption>
+	         </figure>
+		</article> <!-- rightContentIndex Ends-->			
+	</div> <!-- subContentIndex Ends-->
+</section> <!-- mainContentIndex Ends-->
+
+<section class="bottomContent"> <!-- bottomContentIndex Begins-->
+	<div class="subBottomContent"> <!-- subBottomContentIndex Begins-->
+		<div class="leftBottomContent">
+			 <figure classs="figureSection">
+	                <img src="../index/pic/waterDrop.jpg">
+	            <figcaption class="homeCaption">
+	                <content> 
+	                	<h3>The water drop looks pretty cool doen't it? Click to find out a lot more.</h3>
+	                </content>
+	            </figcaption>
+	         </figure>
+		</div>
+		<div class="middleBottomContent">	
+			 <figure classs="figureSection">
+	                <img src="../index/pic/polar1.jpg">
+	            <figcaption class="homeCaption">
+		              <content> 
+		              	<h3>The polar bear is wed!! Did you know that they will become extint in 2020? </h3>
+	                </content>
+	            </figcaption>
+	         </figure>
+		</div>
+		<div class="rightBottomContent">
+			 <figure classs="figureSection">
+	                <img src="../index/pic/redWhite.jpg">
+	            <figcaption class="homeCaption">
+	                <content> 
+	                	<h3> Red and White. That are the color of the peruvian flag. Join us to lear more about it. </h3>
+		            </content>
+	            </figcaption>
+	         </figure>
+		</div>
+	</div> <!-- subBottomContentIndex Ends-->
+</section> <!-- bottomContentIndex Ends-->
+
+<footer class="mainFooter"> <!-- mainFooterIndex Begins-->
+		<p>Copyright &copy; PeruvianNow</a></p>
+		<div class = "logoBottom">
+			<img src="../general/marcaLogoBlack.png" width= "200px">
+		</div>
+</footer><!-- mainFooterIndex Ends-->
+
+<script type="text/javascript" src="../general/jquery.js"> </script>
+<script type="text/javascript" src="../general/general.js"> </script>
+<script src = "../general/carousel.min.js"></script>
+
+</body> <!-- body ends -->
+</html>
